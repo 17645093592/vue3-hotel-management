@@ -1,0 +1,144 @@
+@import './_global.scss';
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+  }
+  html,
+  body,
+  #app {
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .search {
+    padding: 10px 0;
+    display: flex;
+    font-size: 14px;
+    color: #666;
+    align-items: center;
+    * {
+      margin-right: 5px;
+    }
+  }
+  .container {
+    width: calc(100% - 32px);
+    // max-width: 1600px;
+    min-height: calc(80vh);
+    background: #fff;
+    box-sizing: border-box;
+    padding: 24px;
+    margin: 0 16px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .pagination {
+    margin-top: 40px;
+    // float: right;
+    // position: absolute;
+    // bottom: 10px;
+    // right: 10px;
+    .page-item{
+         position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+  }
+  .el-color-picker__trigger {
+    border: none !important;
+  }
+  
+/* index页------菜单二级侧栏title，arrow箭头 隐藏 */
+.el-menu-item-group__title,
+.el-submenu__icon-arrow {
+  display: none;
+}
+/* 清除一级菜单、二级菜单focus */
+.el-menu-item:focus,
+.el-menu-item:hover,
+.el-submenu__title:focus,
+.el-submenu__title:hover {
+  background: none;
+}
+/* 清除菜单过渡效果 */
+.el-menu-item {
+  transition: none;
+}
+/*
+ * index页----- 一级侧栏配置
+ *一级侧栏 & 带二级侧栏的一级侧栏
+ */
+/* 默认状态 */
+.el-menu-item,
+.el-submenu__title {
+  height: 54px;
+  line-height: 54px;
+  padding: 0 8px 0 12px !important;
+  border-left: 4px solid transparent;
+}
+/* 悬停 */
+.el-menu-item:hover,
+.el-submenu__title:hover {
+  background: transparent;
+}
+.el-menu-item .hover span,
+.el-submenu__title .hover span {
+  color: #fff;
+}
+/* 选中 */
+.el-menu-item.is-active {
+  background: linear-gradient(to right, rgba(43, 82, 181, 1), rgba(43, 82, 181, 0)) !important;
+  color: #fff !important;
+  border-color: #4876f6 !important;
+}
+/* 默认状态 */
+.el-submenu .el-menu-item{height: 46px;line-height: 46px;padding: 0 32px 0 36px!important;color: rgba(255, 255, 255, 0.6);border-left: 4px solid transparent;}
+/* 悬停 */
+.el-submenu .el-menu-item:hover{color: #fff!important;background: #232a3b;}
+/* 选中 */
+.el-submenu .el-menu-item:active{color: #fff!important;background: linear-gradient(to right, rgba(43, 82, 181, 1), rgba(43, 82, 181, 0));border-color: #4876f6!important;}
+
+
+/*----------弹性盒模型----------*/
+.flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .flex-end {
+    display: flex;
+    align-items: flex-end;
+  }
+  .flex-center-end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .flex-center-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 树 表头*/
+.tree-title{width:100%;color:$black-color;background:$table-thead-bgcolor;border:1px solid $table-border;border-bottom:none;box-sizing:border-box;}
+/* 树 没数据*/
+.tree-no-data{border:1px solid $table-border;color:$gray-color;height:60px;line-height:60px;text-align:center;}
+/* 树 清除节点高度*/
+.tree-container{border-bottom: 1px solid $table-border;}
+.tree-container .el-tree-node__content{height: auto;border: 1px solid $table-border;border-bottom: none;}
+/* 树 内容*/
+.tree-node{display:flex;align-items:center;justify-content:space-between;flex:1;font-size:14px;}
+.tree-title p,.tree-node p,.tree-node div{height: 44px;line-height: 44px;text-align: center;box-sizing: border-box;}

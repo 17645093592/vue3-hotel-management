@@ -1,0 +1,82 @@
+/*---------------------------通用变量---------------------------------*/
+/*----------符号字体----------*/
+$symbol-family: Consolas !default;
+/*----------字体大小----------*/
+$main-title-size: 24px !default;
+$sub-title-size: 20px !default;
+$title-size: 18px !default;
+$large-size: 16px !default;
+$default-size: 14px !default;
+$small-size: 12px !default;
+/*----------行高大小----------*/
+$main-title-line-height: 28px !default;
+$sub-title-line-height: 24px !default;
+$title-line-height: 22px !default;
+$large-line-height: 20px !default;
+$default-line-height: 14px !default;
+/*----------基本颜色  红-黄-蓝-绿-灰----------*/
+$default-color: #606266 !default;
+$error-color: #fa4338 !default;
+$warn-color: #ffa70f !default;
+$primary-color: #3076fe !default;
+$success-color: #1ece59 !default;
+$black-color: #303133 !default;
+$gray-color: #888 !default; //
+$light-gray-color: #fafafa !default; //
+/*----------按钮悬停、按下颜色----------*/
+$primary-hover-color: #235bda !default;
+$primary-active-color: #1843b6 !default;
+$error-hover-color: #d7282d !default;
+$error-active-color: #b31c2c !default;
+$warn-hover-color: #db870a !default;
+$warn-active-color: #b76907 !default;
+$success-hover-color: #15b159 !default;
+$success-active-color: #0f9456 !default;
+/*----------公共样式--------*/
+$common-icon: #dcdfe6 !default;
+$common-border: #dcdfe6 !default;
+$common-placeholder: #c0c4cc !default;
+$common-disabled: #c0c4cc !default;
+$common-border-radius: 4px !default;
+$common-gradual: linear-gradient(left top, #2fa5ac, #436bb1) !default; //
+$common-shadow: 0px 5px 23px 3px rgba(0, 0, 0, 0.5); //
+$common-line: #aaa !default; //
+$common-banner-font: #4e5486 !default; //
+
+/*----------表格---------*/
+$table-thead-bgcolor: #f5f7fa !default;
+$table-border: $common-border !default;
+$table-tr-bgcolor: #f6fbff !default; //
+
+/*---------------------------具体页面变量---------------------------------*/
+
+/*----------index页 顶栏&侧栏---------*/
+$index-head-height: 48px;
+$index-side-width: 216px;
+
+/*----------index页 顶栏阴影---------*/
+$index-head-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.08) !default;
+/*----------index页 背景色---------*/
+$index-background: #f3f5fa !default;
+
+/*----------index一级导航 默认状态---------*/
+$index-side-background: #2c354c !default;
+$index-side-font: #8598b9 !default;
+/*----------index一级导航 悬停状态---------*/
+$index-side-hover-background: $index-side-background;
+$index-side-hover-font: #fff !default;
+/*----------index一级导航 选中状态---------*/
+$index-side-act-background: linear-gradient(to right, rgba(43, 82, 181, 1), rgba(43, 82, 181, 0)) !default;
+$index-side-act-font: #fff !default;
+$index-side-act-border: #4876f6 !default;
+
+/*----------index二级导航 默认状态---------*/
+$index-subside-background: #232a3b !default;
+$index-subside-font: rgba(255, 255, 255, 0.6);
+/*----------index二级导航 悬停状态---------*/
+$index-subside-hover-background: $index-subside-background;
+$index-subside-hover-font: #fff !default;
+/*----------index二级导航 选中状态---------*/
+$index-subside-act-background: $index-side-act-background;
+$index-subside-act-font: $index-subside-hover-font;
+$index-subside-act-border: $index-side-act-border;
